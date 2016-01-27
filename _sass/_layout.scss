@@ -1,0 +1,238 @@
+.clearfix:after { 
+  content: " ";
+  display: block; 
+  height: 0; 
+  clear: both;
+}
+
+.vert-align {
+  @include vertical-align;
+}
+
+.fr { float: right; }
+.fl { float: left; }
+
+.limit {
+  width:83.3333%;
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/*
+PINS
+========================*/
+
+
+.pl, .pr, .pb, .pt  {
+  position: absolute;
+}
+
+.pr { 
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.pl { 
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pb {
+  bottom: 0;
+  left: 0;
+}
+
+
+/*
+SPACING
+========================*/
+  .py2 { padding: 2em 0em; }
+  .py4 { padding: 4em 0em; }
+  .py6 { padding: 6em 0em; }
+  .py8 { padding: 8em 0em; }
+
+  .mb0 { margin-bottom: .5em; }
+  .mb1 { margin-bottom: 1em; }
+  .mb2 { margin-bottom: 2em; }
+  .mb4 { margin-bottom: 4em; }
+  .mb6 { margin-bottom: 6em; }
+  .mb8 { margin-bottom: 8em; }
+
+  .mt0 { margin-top: .5em; }
+  .mt1 { margin-top: 1em; }
+  .mt2 { margin-top: 2em; }
+  .mt3 { margin-top: 3em; }
+  .mt4 { margin-top: 4em; }
+  .mt6 { margin-top: 6em; }
+  .mt8 { margin-top: 8em; }
+
+  .ml0 { margin-left: 4.1675%; }
+  .ml1 { margin-left: 8.33%; }
+  .ml2 { margin-left: 16.67%; }
+  .ml3 { margin-left: 25%; }
+  .ml4 { margin-left: 33.33%; }
+  .ml5 { margin-left: 41.6666%; }
+  .ml6 { margin-left: 50%; }
+  .ml8 { margin-left: 66.67%; }
+
+
+  /*
+  ABSOLUTE POSITIONS
+  ========================*/
+
+  .z-100 {
+    z-index: -100;
+    position: relative;
+  }
+  .z100 {
+    z-index: 100;
+    position: relative;
+  }
+
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+
+
+  /*
+  ROWZ
+  ========================*/
+
+.r0 { height: 2.5em; }
+.r1 { height: 4em; }
+.r2 { height: 8em; }
+.r3 { height: 20em; }
+.r4 { height: 25em; }
+.r7 {  height: 30em; }
+
+  .row-med {
+    height: 8em;
+  }
+
+  .row-lrg {
+    height: 12em;
+  }
+
+
+  /*
+  COLUMNZ
+  ========================*/
+
+  .grid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+  }
+
+  [class*='col'] {
+    float: left;
+    padding-right: 1em;
+  }
+
+  [class*='row'] [class*='col']:last-of-type {
+    padding-right: 0;
+  }
+
+.col0 {
+    width: 4.1675%;
+  }
+  .col1 {
+    width: 8.33%;
+  }
+  .col2 {
+    width: 16.67%;
+  }
+  .col3 {
+    width: 25%;
+  }
+  .col4 {
+    width: 33.33%;
+  }
+  .col5 {
+    width: 41.6666%;
+  }
+  .col6 {
+    width: 50%;
+  }
+  .col8 {
+    width: 66.67%;
+  }
+  .col10 {
+    width: 83.33%;
+  }
+.col11 {
+    width: 92%;
+  }
+  .col12 {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .full, .full[class*='col']:last-of-type {
+    padding-right: 1em;
+  }
+  
+/*
+  SPACING
+  =======================
+*/
+
+  .mr0 { margin-right: 4.1675%; }
+  .mr1 { margin-right: 8.3333%;}
+  .mr2 { margin-right: 16.67%;}
+  .mr6 { margin-right: 50%;}
+
+  .p1 { padding: 1em; }
+  .p2 { padding: 2em; }
+  .p3 { padding: 3em; }
+  .p4 { padding: 4em; }
+/*
+  TRYPTYCH
+  ========================
+/*
+  .grid {
+    max-width: 1270px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 4em;
+
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  [class*='col'] {
+    float: left;
+  }
+
+  .col3 { 
+    width: 33.33%; 
+    padding: 0 1.2em;
+
+    &:first-child {
+    }
+
+    &:last-child {
+    }
+  }
+  */
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none;
+}
+
+

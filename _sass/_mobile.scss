@@ -1,0 +1,145 @@
+/* Mobile Layout
+------------------------------------------------------- */
+.mobile {
+  display: none;
+}
+
+.mobile-hide {
+  display: block;
+}
+
+@media only screen and (max-width:672px) {
+  .mobile {
+    display: block;
+  }
+  .mobile-hide {
+    display: block;
+  }
+
+  h1.trip-name {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  h3.trip-date {
+    text-align: center;
+  }
+
+  a:link { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+    .ml3 { margin-left: 0em }
+
+  .full, .full[class*='col']:last-of-type {
+    padding-right: 0em;
+  }
+
+  [class*='col'] {
+    padding-right: 0;
+  }
+
+  [class*='mobile']:last-of-type {
+    margin-top: 0em;
+  }
+
+  .ham {
+    font-size: 1.75em;
+    line-height: 2.5em;
+    cursor: pointer;
+  }
+
+  header nav {
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+
+    ul.nav {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      padding-top: 3em;
+      transform: TRANSLATEY(0);
+    }
+
+    .fr { float: none; }
+
+    li { 
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid $gray-light;
+    }
+
+    ul.nav li a {
+      line-height: 4em;
+      color: $gray-med;
+      font-size: 1em;
+
+      &.return {
+        position: absolute;
+        right: 5%;
+        line-height: 0;
+        padding: 0;
+        top: 1em;
+      }
+
+      &.btn {
+        position: absolute;
+        bottom: 4em;
+        line-height: 1em;
+        width: 90%;
+        right: 5%;
+      }
+
+      &:hover {
+        border-bottom: 0px solid #fff;
+      }
+    }
+
+
+
+    li:last-child { padding-right: 1em; border-bottom: none; }
+  }
+
+  .white ul.nav li a:hover { border: none; }
+
+  #priceometer li.threshold span.fr,
+  #priceometer span.fr {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+  .flipper {
+    margin-top: 2em;
+    height: 12em;
+  }
+
+  .jp-card-container {
+    display: none;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+
+  #map {
+    width: 90%;
+    margin: 0 5%;
+  }
+  
+  .modal {
+    .modal-container {
+      padding: 5%;
+    }
+    .modal-content {
+      width: 90%; 
+    }
+  }
+}

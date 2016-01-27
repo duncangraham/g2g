@@ -1,0 +1,38 @@
+// Our variables
+  
+$base-font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     20px;
+
+$text-color:       #333;
+$background-color: #fff;
+$brand-color:      #47D36F;
+// ADD SOME NICE GRAYS/BLUES
+
+$yellow: #FFD;
+$red:    #E67A7A;
+$orange: #F5D57B;
+
+
+$gray:             #a7a7a7;
+$gray-light:       #f7fafa;
+$gray-med:         #666F6F; //hail
+$gray-dark:        #111;
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Mixins
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

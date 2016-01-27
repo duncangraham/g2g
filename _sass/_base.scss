@@ -1,0 +1,334 @@
+/*=========================================
+Reset
+=========================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+textarea {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: none;
+  resize: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.group:before,
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1; }
+
+/**
+ * Baseline
+ */
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+};
+
+@media all and (max-width: 72em) {
+  body {
+    // font-size: 95%;
+  }
+}
+
+p {
+    font-size: 1em;       /* 15 */
+  line-height: 1.5em;   /* 22.5 */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  // padding-top: 1px;
+}
+
+h1 {
+  font-size: 3em;       /* 48 */
+  line-height: 1em;     /* 48 */
+}
+
+h2 {
+  font-size: 1.2em;       /* 36 */
+  line-height: 1.3333em;   /* 48 */
+  font-weight: bold;
+  letter-spacing: .2em;
+  text-align: center;
+  text-transform: uppercase;
+  // margin: .66667em;
+}
+
+h3 {
+  font-size: 1.5em;     /* 24 */
+  line-height: 1em;     /* 24 */
+  font-weight: bold;
+  text-align: center;
+}
+
+h4, h5, h6 {
+  font-size: 1em;      /* 16 */
+  line-height: 1.5em;  /* 24 */
+  letter-spacing: .15em;
+}
+
+small,
+.dablink,
+.hatnote {
+  max-width: 46em;
+  font-size: .875em;            /* 14 */
+  line-height: 1.714285714em;   /* 24 */
+  margin: 0 0 1.714285714em;
+}
+
+tr, td, th {
+  padding: 0;
+}
+
+tr th {
+  padding-top: 1.714285714em;
+}
+
+label {
+  font-weight: bold;
+}
+
+/**
+ * Basis Styling
+ */
+
+body {
+  font-family: "proxima-nova",sans-serif;
+  color: #333;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+
+ul {
+  list-style-type: none;
+}
+
+ol {
+    margin-left: $spacing-unit;
+    margin-bottom: 3em;
+}
+
+li {
+  font-weight: 400;
+  padding: 1em 0em;
+  list-style-type: none;
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+
+%caps {
+  text-transform: uppercase;
+  font-weight: bold;
+//  letter-spacing: .15em;
+}
+
+
+
+h1 {
+  letter-spacing: .1em;
+}
+
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1;
+}
+
+
+h4 {
+  @extend %caps;
+  font-size: 14px;
+  line-height: 1.25em;
+
+}
+
+h5 {
+  @extend %caps;
+  font-size: 10px;
+
+}
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($brand-color, 15%);
+    }
+
+
+    &.dark {
+      color: rgba(255,255,255,.5);
+    }
+
+    &.dark:hover {
+      color: #FFF;
+    }
+}
+
+section {
+  padding: 90px 0em;
+
+  &.space {
+  padding: 8em 0em;
+  }
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $gray;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $gray;
+        }
+    }
+}
+
+.bb {
+}
